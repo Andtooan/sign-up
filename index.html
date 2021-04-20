@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8" >
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				
+				<form id="form" name="formulario" method="POST" action="https://banciss-api.herokuapp.com/api/auth/signup" >
+					<h2>Registro</h2>
+					<label for="name"> </label>
+					<input name="name" type="text" class="field" placeholder="Nombre">
+					<label for="lastName"> </label>
+					<input name="lastName" type="text" class="field" placeholder="Apellido">
+					<label for="email"> </label>
+					<input name="email" type="text" class="field" placeholder="email">
+					<label for="password"> </label>
+					<input name="password" type="password" class="field" placeholder="Contraseña">
+					<label for="confirmPassword"> </label>
+					<input name= "confirmPassword" type="password" class="field" placeholder="Confirma tu contraseña">
+					<button type="submit" name="submit" class="btn">Enviar</button>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
